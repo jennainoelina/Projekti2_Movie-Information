@@ -1,3 +1,51 @@
+/* Oletus-asetusten poisto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tausta */
 body {
     background-color: black;
 }
+
+/* Otsikko/yläpalkki */
+h2 {
+    color:white;
+    background-color: rgb(73, 72, 72);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Nappulat */
+#nappulat {
+    text-align: center;
+    margin: 30px;
+}
+
+label {
+    color: white;
+}
+
+#kaupunkivalinta {
+    margin: 10px;
+}
+
+#genre {
+    margin: 10px;
+}
+
+select {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 12px 16px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 8px;
+    outline: none;
+    width: 220px;
+    appearance: none;
+    transition: 0.3s;
+    cursor: pointer;
+  }
