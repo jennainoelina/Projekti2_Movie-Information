@@ -1,12 +1,12 @@
 # Projektin nimi ja tekijät
-Projektin nimi ja kaikki mukana olevat tekijät. 
+Projektin "Leffaportti" tekijänä Jenna Vahviala
 
 ## Verkkolinkit:
-Pääset julkaistuun sovellukseen käsiksi osoitteessa [google.com](https://google.com)
-Linkki projektin videoesittelyyn [google.com](https://google.com)
+Pääset julkaistuun sovellukseen käsiksi osoitteessa 
+Linkki projektin videoesittelyyn 
 
 ## Työn jakautuminen 
-Miten työmäärä jaettiin? Kuka teki mitä? Miten yhteistyö sujui?
+Koko projektin teki Jenna Vahviala.
 
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
 Mielestäni onnistuin...
@@ -33,7 +33,9 @@ Oppimistani tukisi jos...
 - [Lisenssi](#lisenssi)
 
 ## Tietoja sovelluksesta
-[Projektin nimi] on sovellus, joka ...
+Leffaportti on sovellus, joka hakee Finnkinon sivuilta leffatietoja hakuehtojen mukaan. Sovelluksessa pystyy valitsemaan haluamansa kaupungin
+sekä leffagenren valikosta. Hakunappulasta sovellus näyttää valitusta kaupungista valitulla genrellä kaikki elokuvat. mitä sillä hetkellä on katsottavissa.
+Hakemalla näkee teatterin, elokuvan nimen, näytösajan sekä kuvan elokuvasta. Sovelluksesta ei pysty ostamaan lippuja näytökseen.
 
 ## Tunnetut virheet/bugit
 Kerro jos tiedät sovelluksessa olevan jotain, mikä ei toimi tai toimii heikosti
@@ -45,15 +47,15 @@ Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta
 Kuva: [Kelly Sikkema](https://unsplash.com/@kellysikkema)
 
 ## Teknologiat
-Kuvaa, mitä teknologioita käytettiin ja mikä oli niiden rooli projektissasi.  
-Käytin seuraavia teknologioita: `html`, `css`, ...
+Käytin seuraavia teknologioita koodin tekemiseen: html, css sekä javascript.
+Demovideo on näytillä kuvat.fi palvelussa ja sovellus toimii Netlify alustalla.
 
-## Asennus
-Kirjoita lyhyet ohjeet sovelluksen käynnistämiseen ja käyttöön. Esimerkiksi:  
-- lataa kaikki tiedostot ja avaa index.html selaimessasi  
-- lataa tai kloonaa repositorio  
-- suorita `npm install`  
-- ...
+## Asennus 
+- Avaa sovellus osoitteessa ...
+- Valitse haluamasi kaupunki tai kaikki
+- Valitse haluamasi leffagenre tai kaikki
+- Paina HAE
+- Sovellus näyttää valintojen perusteella tällä hetkellä olevat näytökset
 
 ## Kiitokset
 Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse myös, jos käytit ChatGPT:tä tai muita tekoälytyökaluja koodauksen aikana ja kerro, miten ne auttoivat sinua.  

@@ -10,12 +10,18 @@ body {
     background-color: black;
 }
 
-/* Otsikko/yläpalkki */
+/* yläpalkki ja "slogan" */
 h2 {
     color:white;
     background-color: rgb(73, 72, 72);
     text-align: center;
     padding: 20px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
 }
 
 /* Nappulat */
