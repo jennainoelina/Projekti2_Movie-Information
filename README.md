@@ -28,9 +28,7 @@ Mutta yleisesti ottaen nautin kyllä tästä kurssista, tehtävistä ja opetukse
 - [Kuvakaappaukset](#kuvakaappaukset)
 - [Teknologiat](#teknologiat)
 - [Asennus](#asennus)
-- [Lähestymistapa](#lähestymistapa)
 - [Kiitokset](#kiitokset)
-- [Lisenssi](#lisenssi)
 
 ## Tietoja sovelluksesta
 Leffaportti on sovellus, josta pystyy hakemaan leffatietoja OMDb -sivustolta. Sovelluksella pystyy hakemaan elokuvan tai sarjan nimellä, genrellä ja kielellä. Yhden hakuehdon täytyy täyttyä, jotta sovelluksen haku toimii. Hakutulos näyttää haetun/haettuje nimen, julkaisvuoden, keston, genren, kielen sekä posterin. Hakemalla nimellä tulostetaan kaikki hakusanan sisältämät tulokset.
@@ -41,10 +39,10 @@ Ongelmaksi muodostui Finnkinon rajapinnasta tietojen hakeminen. Netistä ei saan
 Toinen tunnettu ongelma on, että tuloksien lukumäärä vaihtelee suuresti valintojen perusteella.
 
 ## Kuvakaappaukset
-Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta  
-`![Kirjoittaminen](https://unsplash.com/photos/VBPzRgd7gfc)`
-
-Kuva: [Kelly Sikkema](https://unsplash.com/@kellysikkema)
+[ESIM1](./kuvat/SS1.png)
+[ESIM2](./kuvat/SS2.png)
+[ESIM3](./kuvat/SS3.png)
+[ESIM4](./kuvat/SS4.png)
 
 ## Teknologiat
 Käytin seuraavia teknologioita koodin tekemiseen: html, css sekä javascript. Koodi on luotu Visual Studio Code -ohjelmalla.
