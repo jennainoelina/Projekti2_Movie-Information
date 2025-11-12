@@ -11,20 +11,20 @@ Koko projektin teki Jenna Vahviala.
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
 Mielestäni onnistuin erityisesti ulkoasun luomisessa. Aikaisemmin jäänyt vaivaamaan, ettei ulkoasusta ole tullut "tarpeeksi nätti" omaan makuun. Nyt olen todella tyytyväinen.
 Parantamista olisi rajapintahakujen kanssa.
-Sovelluksesta jäi puuttumaan...
-Koen, että olen oppinut...
-Epäselväksi jäi...
-Antaisin itselleni pisteitä seuraavasti: xx/yy p
+Sovelluksesta jäi puuttumaan lisätiedot kuvia painaessa. Sovellus näyttää myös vain 10 tulosta, jos hakee kielellä tai genrellä. Kielihaku on myös rajallinen (esim. suomenkielisiä tuloksia ei tule).
+Koen, että olen oppinut paljonkin projektia tehdessä. Rajapintojen kutsu ja tietojen käyttä konkretisoitui paremmin kun teki omaa projektia.
+Antaisin itselleni arvosanaksi: 4-5
 
 ## Palaute opettajalle kurssista sekä itse opetuksesta tähän saakka
-Kurssi sekä lähiopetus ovat tuntuneet... 
-Oppimistani tukisi jos...
+Kurssi sekä lähiopetus ovat tuntuneet todella hyödyllisiltä. Workshopit ovat auttaneet tehtävien ymmärtämisessä kun apua on saatavilla helposti. Tehtävissä käytettiin paljon opittuja koodeja, mutta myös sellaisia pätkiä ja rakenteita, joita ei mielestäni käyty yhteisesti läpi tai selitetty ollenkaan. Oppimista tukisi huomattavasti koodien läpikäynti ja selitys, mitä yksittäiset koodit tekee. Jouduin itse kysymään tekoälyltä paljon apua koodien selittämisessä, koska teorioissa ei käyty asiaa läpi tarpeeksi perusteellisesti.
+
+Mutta yleisesti ottaen nautin kyllä tästä kurssista, tehtävistä ja opetuksesta. Pidän Mikan opetustyylistä.
 
 
 ## Sisällysluettelo:
 
 - [Tietoja sovelluksesta](#tietoja-sovelluksesta)
-- [Tunnetut virheet/bugit](#Tunnetut virheet/bugit)
+- [Tunnetut virheet/bugit](#Tunnetut-virheet/bugit)
 - [Kuvakaappaukset](#kuvakaappaukset)
 - [Teknologiat](#teknologiat)
 - [Asennus](#asennus)
@@ -33,11 +33,9 @@ Oppimistani tukisi jos...
 - [Lisenssi](#lisenssi)
 
 ## Tietoja sovelluksesta
-Leffaportti on sovellus, josta pystyy hakemaan leffatietoja OMDb sivustolta. Sovelluksella pystyy hakemaan elokuvan tai sarjan nimellä, genrellä ja kielellä. Hakutulos näyttää haetun nimen, julkaisvuoden, keston, genren, kielen sekä posterin.
+Leffaportti on sovellus, josta pystyy hakemaan leffatietoja OMDb -sivustolta. Sovelluksella pystyy hakemaan elokuvan tai sarjan nimellä, genrellä ja kielellä. Yhden hakuehdon täytyy täyttyä, jotta sovelluksen haku toimii. Hakutulos näyttää haetun/haettuje nimen, julkaisvuoden, keston, genren, kielen sekä posterin. Hakemalla nimellä tulostetaan kaikki hakusanan sisältämät tulokset.
 
 ## Tunnetut virheet/bugit
-Kerro jos tiedät sovelluksessa olevan jotain, mikä ei toimi tai toimii heikosti.
-
 Ongelmaksi muodostui Finnkinon rajapinnasta tietojen hakeminen. Netistä ei saanut suoraa vastausta, miksi ei tietoja hakenut, joten taistelin tämän kanssa pidemmän aikaa. Loppujen lopuksi selvisi, ettei rajapintakutsu toimi juuri tällä hetkellä, joten jouduin päivässä päivittämään koko sovelluksen eri rajapinnalle (OMBd), josta tuli hieman erilaisia tietoja.
 
 ## Kuvakaappaukset
@@ -47,22 +45,19 @@ Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta
 Kuva: [Kelly Sikkema](https://unsplash.com/@kellysikkema)
 
 ## Teknologiat
-Käytin seuraavia teknologioita koodin tekemiseen: html, css sekä javascript.
+Käytin seuraavia teknologioita koodin tekemiseen: html, css sekä javascript. Koodi on luotu Visual Studio Code -ohjelmalla.
 Demovideo on näytillä kuvat.fi palvelussa ja sovellus toimii Netlify alustalla.
 
 ## Asennus 
-- Avaa sovellus osoitteessa ...
-- Valitse haluamasi kaupunki tai kaikki
-- Valitse haluamasi leffagenre tai kaikki
-- Paina HAE
-- Sovellus näyttää valintojen perusteella tällä hetkellä olevat näytökset
+- Sovellus löytyy osoitteesta ...
+- Kirjoita elokuvan tai sarjan nimi, genre ja/tai kieli. Yhden hakuehdon täytyy täyttyä, jotta haku suoritetaan.
+- Paina HAE.
+- Haku näyttää max. 10 tulosta haun perusteella.
 
-## Kiitokset
-Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse myös, jos käytit ChatGPT:tä tai muita tekoälytyökaluja koodauksen aikana ja kerro, miten ne auttoivat sinua.  
-- [John Doe](johndoe.com)  
-- [Beginners guide to BEM](link-goes-here.com)  
+## Kiitokset  
+- AI (ChatGPT)
+- Canvas materiaali
+- Mika Stenberg opetus
+- W3schools (https://www.w3schools.com/)
 
-## Lisenssi
-Valitse projektille lisenssi seuraamalla tätä [opasta](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository).
-
-Esimerkki: MIT-lisenssi @ [tekijä](author.com)
+AI toimi apuna koodipätkien ja vikojen etsimisessä. Auttoi myös koodien soveltamisessa oikeaan tarkoitukseen.
