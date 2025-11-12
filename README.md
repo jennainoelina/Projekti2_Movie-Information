@@ -14,11 +14,11 @@ Mielestäni onnistuin erityisesti ulkoasun luomisessa. Aikaisemmin jäänyt vaiv
 
 Parantamista olisi rajapintahakujen kanssa.
 
-Sovelluksesta jäi puuttumaan lisätiedot kuvia painaessa. Sovellus näyttää myös vain 10 tulosta, jos hakee kielellä tai genrellä. Kielihaku on myös rajallinen (esim. suomenkielisiä tuloksia ei tule).
+Sovelluksesta jäi puuttumaan lisätiedot kuvia painaessa. Sovellus näyttää myös vain max. 10 tulosta. Kielihaku on myös rajallinen (esim. suomenkielisiä tuloksia ei tule).
 
-Koen, että olen oppinut paljonkin projektia tehdessä. Rajapintojen kutsu ja tietojen käyttä konkretisoitui paremmin kun teki omaa projektia.
+Koen, että olen oppinut paljonkin projektia tehdessä. Rajapintojen kutsu ja tietojen käyttö konkretisoitui paremmin kun teki omaa projektia.
 
-Antaisin itselleni arvosanaksi: 4-5
+Antaisin itselleni arvosanaksi: 5
 
 ## Palaute opettajalle kurssista sekä itse opetuksesta tähän saakka
 Kurssi sekä lähiopetus ovat tuntuneet todella hyödyllisiltä. Workshopit ovat auttaneet tehtävien ymmärtämisessä kun apua on saatavilla helposti. Tehtävissä käytettiin paljon opittuja koodeja, mutta myös sellaisia pätkiä ja rakenteita, joita ei mielestäni käyty yhteisesti läpi tai selitetty ollenkaan. Oppimista tukisi huomattavasti koodien läpikäynti ja selitys, mitä yksittäiset koodit tekee. Jouduin itse kysymään tekoälyltä paljon apua koodien selittämisessä, koska teorioissa ei käyty asiaa läpi tarpeeksi perusteellisesti.
