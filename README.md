@@ -11,9 +11,13 @@ Koko projektin teki Jenna Vahviala.
 
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
 Mielestäni onnistuin erityisesti ulkoasun luomisessa. Aikaisemmin jäänyt vaivaamaan, ettei ulkoasusta ole tullut "tarpeeksi nätti" omaan makuun. Nyt olen todella tyytyväinen.
+
 Parantamista olisi rajapintahakujen kanssa.
+
 Sovelluksesta jäi puuttumaan lisätiedot kuvia painaessa. Sovellus näyttää myös vain 10 tulosta, jos hakee kielellä tai genrellä. Kielihaku on myös rajallinen (esim. suomenkielisiä tuloksia ei tule).
+
 Koen, että olen oppinut paljonkin projektia tehdessä. Rajapintojen kutsu ja tietojen käyttä konkretisoitui paremmin kun teki omaa projektia.
+
 Antaisin itselleni arvosanaksi: 4-5
 
 ## Palaute opettajalle kurssista sekä itse opetuksesta tähän saakka
