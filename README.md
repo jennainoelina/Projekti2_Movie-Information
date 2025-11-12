@@ -2,8 +2,8 @@
 Projektin "Leffaportti" tekijänä Jenna Vahviala
 
 ## Verkkolinkit:
-Pääset julkaistuun sovellukseen käsiksi osoitteessa 
-Linkki projektin videoesittelyyn 
+Pääset julkaistuun sovellukseen käsiksi osoitteessa https://leffaportti.netlify.app/
+Linkki projektin videoesittelyyn https://fotovahviala.kuvat.fi/kuvat/Omat/LAUREA/Websovellusten+kehitt%C3%A4minen/
 
 ## Työn jakautuminen 
 Koko projektin teki Jenna Vahviala.
@@ -49,7 +49,7 @@ Käytin seuraavia teknologioita koodin tekemiseen: html, css sekä javascript. K
 Demovideo on näytillä kuvat.fi palvelussa ja sovellus toimii Netlify alustalla.
 
 ## Asennus 
-- Sovellus löytyy osoitteesta ...
+- Sovellus löytyy osoitteesta https://leffaportti.netlify.app/
 - Kirjoita elokuvan tai sarjan nimi, genre ja/tai kieli. Yhden hakuehdon täytyy täyttyä, jotta haku suoritetaan.
 - Paina HAE.
 - Haku näyttää max. 10 tulosta haun perusteella.
