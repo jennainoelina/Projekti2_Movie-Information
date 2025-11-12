@@ -38,6 +38,8 @@ Leffaportti on sovellus, josta pystyy hakemaan leffatietoja OMDb -sivustolta. So
 ## Tunnetut virheet/bugit
 Ongelmaksi muodostui Finnkinon rajapinnasta tietojen hakeminen. Netistä ei saanut suoraa vastausta, miksi ei tietoja hakenut, joten taistelin tämän kanssa pidemmän aikaa. Loppujen lopuksi selvisi, ettei rajapintakutsu toimi juuri tällä hetkellä, joten jouduin päivässä päivittämään koko sovelluksen eri rajapinnalle (OMBd), josta tuli hieman erilaisia tietoja.
 
+Toinen tunnettu ongelma on, että tuloksien lukumäärä vaihtelee suuresti valintojen perusteella.
+
 ## Kuvakaappaukset
 Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta  
 `![Kirjoittaminen](https://unsplash.com/photos/VBPzRgd7gfc)`
