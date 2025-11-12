@@ -20,40 +20,37 @@ haku.addEventListener("click", function() {
         return;
     }
 
-    // Jos nimi on annettu, haetaan kaikki elokuvat, joiden nimessä on hakusana
+    // Jos nimi on annettu, haetaan kaikki elokuvat/sarjat, joiden nimessä on hakusana
     if (nimi) {
-        haeElokuvaHakusanalla(nimi, genre, kieli); // Kutsutaan uutta hakutoimintoa
+        haeElokuvaHakusanalla(nimi, genre, kieli);
     } else {
-        // Jos ei nimeä, haetaan laajemmin (käyttäen mahdollisesti muita ehtoja)
+        // Jos ei nimeä, haetaan laajemmin
         haeHaku(genre, kieli);
     }
 });
 
-// UUSI FUNKTIO: Hakee kaikki elokuvat, joiden nimessä on annettu hakusana (s=search)
+// Hakee kaikki elokuvat ja sarjat, joiden nimessä on annettu hakusana
 function haeElokuvaHakusanalla(hakusana, genre, kieli) {
-    tulostus.innerHTML = "<p>Haetaan elokuvia hakusanalla...</p>";
+    tulostus.innerHTML = "<p>Haetaan elokuvia ja sarjoja hakusanalla...</p>";
 
-    // Käytetään 's' (search) parametria laajempaan hakuun
-    const osoite = `https://www.omdbapi.com/?s=${encodeURIComponent(hakusana)}&type=movie&apikey=${API_KEY}`;
+    const osoite = `https://www.omdbapi.com/?s=${encodeURIComponent(hakusana)}&apikey=${API_KEY}`;
 
     fetch(osoite)
         .then(vastaus => vastaus.json())
         .then(data => {
             if (data.Response === "False" || !data.Search) {
-                tulostus.innerHTML = `<p>Ei löytynyt elokuvia hakusanalla "${hakusana}".</p>`;
+                tulostus.innerHTML = `<p>Ei löytynyt elokuvia tai sarjoja hakusanalla "${hakusana}".</p>`;
                 return;
             }
 
             tulostus.innerHTML = ""; // Tyhjennetään tulostusalue
             const hakutulokset = data.Search;
-            let naytetytElokuvat = 0;
+            let naytetytTulokset = 0;
 
             // Käydään läpi kaikki hakutulokset ja haetaan niistä tarkemmat tiedot
-            // (Genre- ja kieli-suodatusta varten tarvitaan erillinen haku IMDb ID:llä)
             hakutulokset.forEach(item => {
                 // Rajoitetaan hakujen määrää OMDb:n ilmaisen version rajoitusten takia
-                // Jos haluat näyttää enemmän kuin 10, tarvitset mahdollisesti pro-tilin tai sivutuksen.
-                if (naytetytElokuvat < 10) {
+                if (naytetytTulokset < 10) {
                      // Haetaan tarkemmat tiedot IMDb ID:llä
                     fetch(`https://www.omdbapi.com/?i=${item.imdbID}&apikey=${API_KEY}`)
                         .then(v => v.json())
@@ -65,11 +62,11 @@ function haeElokuvaHakusanalla(hakusana, genre, kieli) {
                             if (genre && !genret.includes(genre)) return;
                             if (kieli && !kielet.includes(kieli)) return;
                             
-                            // Tarkistetaan, että kyseessä on elokuva, vaikka yritettiin rajata type=movie:lla
-                            if (tiedot.Type && tiedot.Type.toLowerCase() !== 'movie') return;
+                            const tyyppi = tiedot.Type?.toLowerCase();
+                            if (tyyppi !== 'movie' && tyyppi !== 'series') return;
 
                             naytaKortti(tiedot);
-                            naytetytElokuvat++;
+                            naytetytTulokset++;
                         })
                         .catch(virhe => console.error("Virhe tarkemmissa tiedoissa:", virhe));
                 }
@@ -78,7 +75,7 @@ function haeElokuvaHakusanalla(hakusana, genre, kieli) {
             // Asetetaan viive, jotta ehtii näyttää "Ei tuloksia" jos yksikään kortti ei tule näkyviin
             setTimeout(() => {
                 if (tulostus.innerHTML === "") {
-                    tulostus.innerHTML = "<p>Ei löytynyt elokuvia annetuilla suodattimilla.</p>";
+                    tulostus.innerHTML = "<p>Ei löytynyt elokuvia tai sarjoja annetuilla suodattimilla.</p>";
                 }
             }, 2000);
         })
@@ -87,7 +84,7 @@ function haeElokuvaHakusanalla(hakusana, genre, kieli) {
         });
 }
 
-// VANHA FUNKTIO, UUSI NIMI: Hakee tietyn elokuvan tai sarjan nimellä (t=title)
+// Hakee tietyn elokuvan tai sarjan nimellä (t=title)
 function haeTarkkaElokuva(nimi, genre, kieli) {
     tulostus.innerHTML = "<p>Haetaan tarkan nimen mukaista elokuvaa...</p>";
 
@@ -110,26 +107,23 @@ function haeTarkkaElokuva(nimi, genre, kieli) {
 
 // Jos ei ole nimeä, haetaan yleisiä tuloksia
 function haeHaku(genre, kieli) {
-    tulostus.innerHTML = "<p>Haetaan elokuvia...</p>";
+    tulostus.innerHTML = "<p>Haetaan elokuvia ja sarjoja...</p>";
 
-    // Käytetään yleistä hakusanaa, jos muita ehtoja on annettu, mutta ei nimeä
-    // Huom: Tämä haku palauttaa satunnaisia tuloksia, koska 's' on tyhjä,
-    // tai käytetään kovakoodattua 'movie', kuten vanhassa koodissa.
-    const osoite = `https://www.omdbapi.com/?s=movie&apikey=${API_KEY}`;
+    const osoite = `https://www.omdbapi.com/?s=batman&apikey=${API_KEY}`;
 
     fetch(osoite)
         .then(vastaus => vastaus.json())
         .then(data => {
             if (data.Response === "False") {
-                tulostus.innerHTML = "<p>Ei löytynyt elokuvia valituilla ehdoilla.</p>";
+                tulostus.innerHTML = "<p>Ei löytynyt elokuvia tai sarjoja valituilla ehdoilla.</p>";
                 return;
             }
 
             tulostus.innerHTML = "";
             let laskuri = 0;
 
-            const elokuvat = data.Search.slice(0, 10);
-            elokuvat.forEach(item => {
+            const tulokset = data.Search.slice(0, 10);
+            tulokset.forEach(item => {
                 fetch(`https://www.omdbapi.com/?i=${item.imdbID}&apikey=${API_KEY}`)
                     .then(v => v.json())
                     .then(tiedot => {
@@ -138,6 +132,9 @@ function haeHaku(genre, kieli) {
 
                         if (genre && !genret.includes(genre)) return;
                         if (kieli && !kielet.includes(kieli)) return;
+                        
+                        const tyyppi = tiedot.Type?.toLowerCase();
+                        if (tyyppi !== 'movie' && tyyppi !== 'series') return;
 
                         naytaKortti(tiedot);
                         laskuri++;
@@ -146,7 +143,7 @@ function haeHaku(genre, kieli) {
 
             setTimeout(() => {
                 if (laskuri === 0) {
-                    tulostus.innerHTML = "<p>Ei löytynyt elokuvia valituilla ehdoilla.</p>";
+                    tulostus.innerHTML = "<p>Ei löytynyt elokuvia tai sarjoja valituilla ehdoilla.</p>";
                 }
             }, 2000);
         })
@@ -179,7 +176,7 @@ function naytaTiedot(data, genre, kieli) {
 function naytaKortti(data) {
     const html = `
         <div class="leffa">
-            <h3>${data.Title}</h3>
+            <h3>${data.Title} (${data.Type})</h3>
             ${data.Poster && data.Poster !== "N/A" ? `<img src="${data.Poster}" alt="${data.Title}" width="200">` : ""}
             <p><b>Julkaisuvuosi:</b> ${data.Year || "-"}</p>
             <p><b>Kesto:</b> ${data.Runtime || "-"}</p>
