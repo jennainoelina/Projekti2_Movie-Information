@@ -3,6 +3,7 @@ Projektin "Leffaportti" tekijänä Jenna Vahviala
 
 ## Verkkolinkit:
 Pääset julkaistuun sovellukseen käsiksi osoitteessa https://leffaportti.netlify.app/
+
 Linkki projektin videoesittelyyn https://fotovahviala.kuvat.fi/kuvat/Omat/LAUREA/Websovellusten+kehitt%C3%A4minen/
 
 ## Työn jakautuminen 
