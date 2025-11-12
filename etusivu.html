@@ -2,62 +2,42 @@
 <html lang="fi">
 
 <head>
+    <meta charset="utf-8">
     <title>Leffaportti</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="tyylit.css" />
+    <link rel="stylesheet" href="tyylit.css">
+    <script src="javakoodit.js" defer></script>
 </head>
-
-<script src="javakoodit.js" defer></script>
 
 <body>
     <h2>LEFFAPORTTI</h2>
     <h3>Mitä tänään katsotaan?</h3>
 
-    <!-- Valintanappulat -->
     <div id="nappulat">
+        <label for="nimi">Elokuvan tai sarjan nimi:</label>
+        <input type="text" id="nimi" placeholder="Esim. Inception">
 
-        <label for="kaupunkivalinta">Valitse kaupunki: </label>
-        <select id="kaupunkivalinta">
-            <option value="kaikki">Kaikki</option>
-            <option value="helsinki">Helsinki</option>
-            <option value="vantaa">Vantaa</option>
-            <option value="espoo">Espoo</option>
-            <option value="lahti">Lahti</option>
-            <option value="turku">Turku</option>
-            <option value="tampere">Tampere</option>
-            <option value="jyvaskyla">Jyväskylä</option>
-            <option value="kuopio">Kuopio</option>
-            <option value="pori">Pori</option>
-            <option value="lappeenranta">Lappeenranta</option>
-            <option value="oulu">Oulu</option>
-            <option value="raisio">Raisio</option>
-        </select>
-
-        <label for="genre">Valitse genre: </label>
+        <label for="genre">Valitse genre:</label>
         <select id="genre">
             <option value="">Kaikki</option>
-            <option value="toiminta">Toiminta</option>
-            <option value="seikkailu">Seikkailu</option>
-            <option value="animaatio">Animaatio</option>
-            <option value="anime">Anime</option>
-            <option value="draama">Draama</option>
-            <option value="fantasia">Fantasia</option>
-            <option value="jannitys">Jännitys</option>
-            <option value="kauhu">Kauhu</option>
-            <option value="klassikot">Klassikot</option>
-            <option value="komedia">Komedia</option>
-            <option value="kotimainen">Kotimainen</option>
-            <option value="musiikki">Musiikki</option>
-            <option value="ooppera">Ooppera</option>
-            <option value="perhe">Perhe-elokuva</option>
-            <option value="rikos">Rikos</option>
-            <option value="romantiikka">Romantiikka</option>
-            <option value="scifi">Sci-fi</option>
-            <option value="urheilu">Urheilu</option>
-            <option value="dokumentti">Dokumentti</option>
-            <option value="event">Event cinema</option>
+            <option value="action">Toiminta</option>
+            <option value="adventure">Seikkailu</option>
+            <option value="animation">Animaatio</option>
+            <option value="comedy">Komedia</option>
+            <option value="drama">Draama</option>
+            <option value="fantasy">Fantasia</option>
+            <option value="horror">Kauhu</option>
+            <option value="romance">Romantiikka</option>
+            <option value="sci-fi">Sci-fi</option>
+            <option value="thriller">Jännitys</option>
         </select>
+
+        <label for="kieli">Valitse kieli:</label>
+        <input type="text" id="kieli" placeholder="Esim. English">
+
+        <button id="hae">HAE</button>
     </div>
+
+    <div id="data"></div>
 </body>
 
 </html>

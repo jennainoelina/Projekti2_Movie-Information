@@ -9,8 +9,8 @@ Linkki projektin videoesittelyyn
 Koko projektin teki Jenna Vahviala.
 
 ## Oma arvio työstä ja oman osaamisen kehittymisestä
-Mielestäni onnistuin...
-Parantamista olisi...
+Mielestäni onnistuin erityisesti ulkoasun luomisessa. Aikaisemmin jäänyt vaivaamaan, ettei ulkoasusta ole tullut "tarpeeksi nätti" omaan makuun. Nyt olen todella tyytyväinen.
+Parantamista olisi rajapintahakujen kanssa.
 Sovelluksesta jäi puuttumaan...
 Koen, että olen oppinut...
 Epäselväksi jäi...
@@ -33,12 +33,12 @@ Oppimistani tukisi jos...
 - [Lisenssi](#lisenssi)
 
 ## Tietoja sovelluksesta
-Leffaportti on sovellus, joka hakee Finnkinon sivuilta leffatietoja hakuehtojen mukaan. Sovelluksessa pystyy valitsemaan haluamansa kaupungin
-sekä leffagenren valikosta. Hakunappulasta sovellus näyttää valitusta kaupungista valitulla genrellä kaikki elokuvat. mitä sillä hetkellä on katsottavissa.
-Hakemalla näkee teatterin, elokuvan nimen, näytösajan sekä kuvan elokuvasta. Sovelluksesta ei pysty ostamaan lippuja näytökseen.
+Leffaportti on sovellus, josta pystyy hakemaan leffatietoja OMDb sivustolta. Sovelluksella pystyy hakemaan elokuvan tai sarjan nimellä, genrellä ja kielellä. Hakutulos näyttää haetun nimen, julkaisvuoden, keston, genren, kielen sekä posterin.
 
 ## Tunnetut virheet/bugit
-Kerro jos tiedät sovelluksessa olevan jotain, mikä ei toimi tai toimii heikosti
+Kerro jos tiedät sovelluksessa olevan jotain, mikä ei toimi tai toimii heikosti.
+
+Ongelmaksi muodostui Finnkinon rajapinnasta tietojen hakeminen. Netistä ei saanut suoraa vastausta, miksi ei tietoja hakenut, joten taistelin tämän kanssa pidemmän aikaa. Loppujen lopuksi selvisi, ettei rajapintakutsu toimi juuri tällä hetkellä, joten jouduin päivässä päivittämään koko sovelluksen eri rajapinnalle (OMBd), josta tuli hieman erilaisia tietoja.
 
 ## Kuvakaappaukset
 Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta  
